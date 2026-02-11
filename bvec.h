@@ -5,7 +5,10 @@
 
 #include <math.h>
 
-// NOTE: Row-Major matrices
+#if defined(__GNUC__) || defined(__clang__)
+#pragma GCC diagnostic push
+#pragma GCC diagnostic ignored "-Wmissing-braces"
+#endif
 
 typedef union 
 {
@@ -567,5 +570,9 @@ static inline mat4 mat4Perspective(float fovDeg, float aspectRatio, float nearPl
 
     return result;
 }
+
+#if defined(__GNUC__) || defined(__clang__)
+#pragma GCC diagnostic pop
+#endif
 
 #endif
