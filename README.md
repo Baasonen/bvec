@@ -38,7 +38,7 @@ A simple vector and matrix library for C, intended for my personal projects and 
 * `vecNDot`: Dot product of two vectors.
 * `vecNCross`: Cross product (available for `vec2` and `vec3`, **NOTE:** 2D returns a scalar).
 * `vecNLength`: Calculate the magnitude of a vector.
-* `vecNLengthSq`: Calculate the squared magnitude (useful for performance).
+* `vecNLengthSq`: Calculate the squared magnitude.
 * `vecNNormalize`: Return a unit vector in the same direction (Returns 0 for zero length vectors).
 
 ### Linear Algebra
@@ -52,7 +52,7 @@ A simple vector and matrix library for C, intended for my personal projects and 
 ### Initialization
 * `matNIdentity`: Create an identity matrix.
 * `matNZero`: Create a matrix with all elements set to zero.
-* `matNDiag`: Create a diagonal matrix from a set of values.
+* `matNDiag`: Create a diagonal matrix with diagonals of a specified constant.
 
 ### Transformation & Basic Operations
 * `matNTranspose`: Flip a matrix over its diagonal.
